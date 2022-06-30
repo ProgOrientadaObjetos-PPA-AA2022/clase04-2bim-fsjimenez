@@ -19,15 +19,10 @@ public abstract class PasajeUrbano{
         valorFijo = pasajeFijo;
     }
     
-    public void establecerPersona(Persona u, double fijo){
+    public void establecerPersona(Persona u){
         usuario = u;
-        valorFijo = fijo;
     }
     
-       
-    public void establecerPersona(Persona p){
-        usuario = p;
-    }
     
     public Persona obtenerPersona(){
         return usuario;
@@ -55,7 +50,7 @@ public abstract class PasajeUrbano{
                     + "Valor Pasaje: %.2f\n"
                     + "---------------------\n",
                     obtenerPersona().obtenerNombre(),
-                    obtenerPersona().obtenerCedula(),
+                    obtenerPersona().obtenerApellido(),
                     obtenerValorPasaje());
     }
     

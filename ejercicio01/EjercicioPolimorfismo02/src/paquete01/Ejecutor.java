@@ -5,12 +5,28 @@
  */
 package paquete01;
 
+import paquete03.AutomovilGasolina;
+import paquete04.AutomovilDiesel;
+
 /**
  *
  * @author reroes
  */
 public class Ejecutor {
     public static void main(String[] args) {
+        AutomovilGasolina autoG = new AutomovilGasolina("Felipe Jiménez", 
+                "LBB-1102", 20, 3.0);
+        autoG.calcularValor();
+        
+        
+        AutomovilDiesel autoD = new AutomovilDiesel("Lionel Messi", 
+                "LCD-1102", 20, 2.0);
+        autoD.establerDescuento(10);
+        autoD.calcularLitros();
+        autoD.calcularValor();
+        
+        System.out.println(autoG);
+        System.out.print(autoD);
         
     }
 }
